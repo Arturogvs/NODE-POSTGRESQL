@@ -1,3 +1,8 @@
+require('dotenv').config();
+console.log('user');
+
+console.log(process.env.DB_USER);
+
 const config = {
     env: process.env.NODE_ENV || 'dev',
     port: process.env.PORT || 3000,
@@ -8,4 +13,4 @@ const config = {
     dbPort: process.env.DB_PORT
 }
 
-module.export = { config };
+module.exports = { config };
